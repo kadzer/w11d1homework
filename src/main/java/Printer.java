@@ -18,8 +18,8 @@ public class Printer {
     public void print(int pages, int copies) {
         int pagesToPrint = pages * copies;
         if (this.paperCount >= pagesToPrint){
-        this.paperCount = paperCount - pagesToPrint;
-        this.tonerVolume = tonerVolume - pagesToPrint;
+        this.paperCount -= pagesToPrint;
+        this.tonerVolume -= pagesToPrint;
         }
         else {
             System.err.println("PC LOAD LETTER!!! Add more paper to print");
