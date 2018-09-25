@@ -18,19 +18,19 @@ public class PrinterTest {
 
     @Test
     public void hasPaper(){
-        assertEquals(200, myPrinter.getNumOfSheets());
+        assertEquals(200, myPrinter.getPaperCount());
     }
 
     @Test
     public void printingDecreasesPaper(){
         myPrinter.print(3,2);
-        assertEquals(194, myPrinter.getNumOfSheets());
+        assertEquals(194, myPrinter.getPaperCount());
     }
 
     @Test
     public void cannotPrintWithoutPaper(){
         myPrinter.print(200, 2);
-        assertEquals(200, myPrinter.getNumOfSheets());
+        assertEquals(200, myPrinter.getPaperCount());
     }
 
     @Test
